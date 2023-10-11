@@ -1,0 +1,288 @@
+/* Dispositivos muito pequenos (smartphones, telas menores que 600px) */
+@media only screen and (max-width: 600px) {
+}
+/* Dispositivos pequenos (tablets modo retrato e smartphones grandes, telas
+maiores que 600px) */
+@media only screen and (min-width: 600px) {
+}
+/* Dispositivos médios (tablets modo paisagem, telas maiores que 768px) */
+@media only screen and (min-width: 768px) {
+}
+/* Dispositivos largos (laptops/desktops, telas maiores que 992px) */
+@media only screen and (min-width: 992px) {
+}
+/* Dispositivos muito largos (laptops and desktops, telas maiores que 1200px) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+
+}
+
+ /*
+ font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Train One', cursive;
+font-family: 'REM', sans-serif;
+font-family: 'Poppins', san-serif;
+
+ */
+
+ :root{
+    --color-verde-claro: #69BF8E;
+    --color-verde-musgo: #435923;
+    --color-verde-escuro: #507306;
+    --color-salmao: #D99B84;
+    --color-azul: #3f618c;
+    --color-cinza: #e6e6e6;
+    --color-amarelo: #d9b26a;
+    --color-verde-escuro2: #3B7822;
+    --color-azul-roxo: #767AC2;
+    --color-verde-limao: #80C263;
+    --color-laranja: #C44F1A;
+    --color-marrom: #78381A;
+    --color-preto: #000000;
+    --color-branco:#fff;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:var(--color-cinza)
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: var(--color-verde-claro);
+    box-shadow: 0px 0px 3px var(--color-preto);
+}
+
+img{
+    width: 35px;
+    position: absolute;
+    top: 10px;
+    left: 110px;
+}
+
+span{
+    font-family: 'Train One', sans-serif;
+    font-size: 1.825rem;
+ }
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    user-select: none;
+
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color:var(--color-branco);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:var(--color-branco);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+
+
+
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid var(--color-branco);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:var(--color-branco);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+    background:var(--color-branco);
+    color: var(--color-verde-musgo);
+
+
+}
+
+.principal{
+    position: absolute;
+    margin-top: 70px;
+    width: 400px;
+    height: 470px;
+    background: transparent;
+    border: 2px solid var(--color-branco);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px var(--color-preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .form-box{
+    width: 100%;
+    padding: 50px; 
+} 
+.principal .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.principal.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+
+}
+
+.principal .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.principal.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+
+}
+
+.form-box h3{
+    font-size: 2em;
+    color: var(--color-verde-musgo);
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--color-verde-musgo);
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--color-verde-musgo);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: 500;
+
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label{
+top: -5px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--color-verde-musgo);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: var(--color-verde-musgo);
+    font-size: 1.2em;
+    line-height: 57px;
+
+}
+
+.esquecer{
+    font-size: .9em;
+    color: var(--color-verde-musgo);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;   
+}
+.esquecer label input{
+    accent-color: var(--color-verde-musgo);
+    margin-right: 3px;
+}
+
+.esquecer a{
+    color: var(--color-verde-musgo);
+    text-decoration: none;
+
+}
+
+.esquecer a:hover{
+    text-decoration: underline;
+
+}
+
+
+.login-register{
+    font-size: .9em;
+    color: var(--color-verde-musgo);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+
+}
+
+.login-register p a{
+    color: var(--color-verde-musgo);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.principal .form-box.login button{
+    padding: 10px 110px;
+    background: var(--color-verde-musgo);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color:var(--color-branco);
+    font-weight: 500;
+}
