@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.principal{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/source/imagens/kisspng-computer-programming-computer-software-programming-code1-alfa-networks-per-5c684e40d872d6.1231323115503396488866.png);
+    background-repeat: no-repeat;
+    background-size: 29.75rem;
+    background-position: 50rem;
+    background-position-y: 6.25rem;
+    background-color: rgb(25,25,25);
+}
+
+header{
+    position: fixed;
+    background-color: rgb(25,25,25);
+    box-shadow: 0rem 0rem 0.313rem black;
+    width: 100%;
+    padding: 0.5em 5em;
+}
+
+a{
+    text-decoration: none;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: 1.5rem;
+}
+
+.curriculo{
+    color: #ffffff;
+    font-size: 2.188rem;
+}
+.curriculo span{
+    color: #f9004d;
+}
+
+.principal li{
+    color: white;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.563rem;
+    margin-right: 1.875rem;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    
+}
+
+li a:link{
+    color: white;
+}
+
+li a:visited{
+    color: white;
+}
+
+li a:hover{
+    color: #f9004d;
+    transition: 0.5s;
+
+}
+
+.nome{
+    padding: 18.75rem;
+    padding-left: 6.25rem;
+}
+
+h1{
+    color: white;
+    font-size: 3.125rem;
+    height: 4.375rem;
+}
+
+h1 span{
+    color: #f9004d;
+}
+
+.nome h3{
+    color: white;
+    font-size: 1.563rem;
+    text-align: left;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    padding: 3.125rem 5%;
+    background-color: #000000;
+}
+
+section img{
+    margin-right: 1.875rem;
+}
+
+section div h2{
+    color: white;
+    font-size: 4.063rem;
+
+}
+
+section div p{
+    color: #e2b9c9;
+    font-size: 1.5rem;
+    text-align: left;
+
+}
+
+.informacoes{
+    background-color: #191919;
+    padding-top: 3.125rem;
+    padding-bottom: 6.25rem;
+}
+
+.informacoes h2{
+    color: white;
+    font-size: 4.688rem;
+    text-align: center;
+}
+
+.card{
+    background-color: #000000;
+    height: 22.813rem;
+    width: 20.938rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    padding: 1.25rem 2.188rem;
+
+}
+
+.card img{
+    height: 6.25rem;
+}
+
+.card h5{
+    color: white;
+    font-size: 1.8rem;
+    margin: 0.625rem;
+}
+
+.card p{
+    color: #e2b9c9;
+    font-size: 1.563rem;
+
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.referencias{
+    display: flex;
+    justify-content: center;
+    height: 18.75rem;
+}
+
+.referencias h2{
+    height: 8.75rem;
+}
+
+
+.referencias-li li{
+    color: #f9004d;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.313rem;
+    margin-right: 3.125rem;
+    height: 1.25rem;
+}
+footer{
+    background-color: #191919;
+    padding-bottom: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5{
+    color: white;
+    font-size: 1.875rem;
+
+}
+
+footer p{
+    color: white;
+    font-size: 1.125rem;
+    margin-top: 14px;
+    margin-bottom: 1.875rem;
+}
+
+.contato{
+    height: 3.438rem;
+    display: flex;
+    gap: 7px;
+}
+
+.contato a{
+    background-color: #f9004d;
+    padding: 0.938rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.contato a:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+
+}
